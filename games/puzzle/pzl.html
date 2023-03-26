@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+  <title>Sliding Puzzle Game</title>
+  <link rel="stylesheet" type="text/css" href="pzl.css">
+</head>
+<body>
+  <div id="container">
+    <h1>Sliding Puzzle Game</h1>
+    <div id="puzzle-container">
+      <div class="tile" data-index="0">1</div>
+      <div class="tile" data-index="1">2</div>
+      <div class="tile" data-index="2">3</div>
+      <div class="tile" data-index="3">4</div>
+      <div class="tile" data-index="4">5</div>
+      <div class="tile" data-index="5">6</div>
+      <div class="tile" data-index="6">7</div>
+      <div class="tile" data-index="7">8</div>
+      <div class="tile" data-index="8" id="empty"></div>
+    </div>
+    <button class="btn" id="shuffle-btn">Shuffle</button>
+    <button class="btn" id="restart"> Restart</button>
+    <button class="btn" id="nb" disabled> Move : <span id="counter"> 0</span></button>
+
+
+  </div>
+  <div id="congratulations">
+		<h3>Congratulations, you won!
+    </h3>
+    <div id="btns">
+		<button class="btn1" id="play-again">Play Again</button>
+    <button class="btn1" id="home">Go Back Home</button>
+
+	</div> </div>
+  <script src="pzl.js"></script>
+</body>
+</html>
