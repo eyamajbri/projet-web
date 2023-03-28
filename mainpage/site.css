@@ -1,0 +1,94 @@
+body {
+	background-color: #cca4b3;
+	font-family: Arial, sans-serif;
+	text-align: center;
+}
+
+header {
+	background-color: #564a4a;
+	color: #fff;
+	padding: 20px;
+}
+
+nav {
+	display: inline-block;
+	margin-left: 50px;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+nav li {
+	display: inline-block;
+	margin: 0 10px;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 1.2em;
+	transition: all 0.2s ease-in-out;
+}
+
+nav a:hover {
+	color: #F2E2C2;
+}
+
+main {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	margin: 50px 0;
+}
+
+.game {
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+	padding: 20px;
+	margin: 20px;
+	width: 300px;
+}
+
+.game h2 {
+	font-size: 2em;
+	margin-top: 0;
+}
+
+.game p {
+	font-size: 1.2em;
+	margin: 20px 0;
+}
+
+.game button {
+	background-color: #564a4a;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	font-size: 1.2em;
+	font-weight: bold;
+	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+}
+
+.game button:hover {
+	background-color: #F2E2C2;
+	color: #564a4a;
+}
+
+footer {
+	background-color: #564a4a;
+	color: #fff;
+	padding: 20px;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
