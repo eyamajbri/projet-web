@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Créer un compte</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+	<h1>Créer un compte</h1>
+	<form onsubmit="return validateForm()">
+		<label for="nom">Nom :</label>
+		<input type="text" id="nom" name="nom" required><br>
+
+		<label for="prenom">Prénom :</label>
+		<input type="text" id="prenom" name="prenom" required><br>
+
+		<label for="adresse-email">Adresse email :</label>
+		<input type="email" id="adresse-email" name="adresse-email" required><br>
+
+		<label for="mot-de-passe">Mot de passe :</label>
+		<input type="password" id="mot-de-passe" name="mot-de-passe" required><br>
+
+		<label for="confirmation-mot-de-passe">Confirmation du mot de passe :</label>
+		<input type="password" id="confirmation-mot-de-passe" name="confirmation-mot-de-passe" required><br>
+
+		<input type="submit" value="Créer un compte">
+	</form>
+    <div id="message"></div>
+    <a href="file:///C:/Users/laifi/OneDrive/Desktop/html/site.html">Go back to home page</a>
+  </div>
+	<script>
+		function validateForm() {
+			var password = document.getElementById("mot-de-passe").value;
+			var confirmPassword = document.getElementById("confirmation-mot-de-passe").value;
+			if (password !== confirmPassword) {
+				alert("Les mots de passe ne sont pas identiques.");
+				return false;
+			} else {
+				alert("Félicitations! Vous avez créé un compte.");
+            }
+        }
+    </script>
+</body> 
+</html>
