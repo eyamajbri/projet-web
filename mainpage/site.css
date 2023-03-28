@@ -92,3 +92,25 @@ footer {
 	left: 0;
 	width: 100%;
 }
+section:first-child {
+	margin-right: 20px;
+}
+
+section:nth-child(2) {
+	margin-left: 20px;
+}
+
+section:nth-child(3) {
+	margin-left: 20px;
+}
+
+section:nth-child(4) {
+	margin-left: 20px;
+}
+
+section:nth-child(5) {
+	margin-left: 20px;
+}
+section:nth-child(6) {
+	margin-left: 20px;
+}
