@@ -27,7 +27,7 @@ playAgainBtn.addEventListener('click', () => {
   start()
 })
 function cardClick(cardDeckValue, event) {
-  let card = event.target
+  let card = event.target 
   cardDeckValue=deck[card.getAttribute('data-index')].value
   if (!card.classList || card.classList.contains('flipped-card') || card.classList.contains('matched-card')) {
     return;
