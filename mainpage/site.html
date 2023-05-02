@@ -2,70 +2,69 @@
 <html>
 <head>
 	<title>Gaming Site</title>
+	<link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
 	<link rel="stylesheet" type="text/css" href="site.css">
+
 </head>
 <body>
-	<header>
-		<h1>Welcome to our Gaming Site!</h1>
-	</header>
-    <br>
-	<nav>
-		<ul>
-			<li><a href="#">Home</a></li>
-			<li><a href="#">Games</a></li>
-			<li><a href="../about us/aboutus.html">About Us</a></li>
-			<li><a href="../contact us/contactus.html">Contact Us</a></li>
-		</ul>
+	<nav class="navbar">
+		<div class="navbar-logo">
+			<a href="/mainpage/site.html"> <img src="./images/logo.jpg" alt="Logo"> </a>
+		</div>
+		<div class="navbar-search">
+			<form action="#" method="get">
+				<input type="text" name="search" placeholder="🔍 Search...">
+			</form>
+		</div>
+		<div class="navbar-buttons">
+			<a href="../formulaire/registration.html" class="navbar-sign-up"> Sign Up </a>
+			<a href="../formulaire/formulaire.html" class="navbar-sign-up1"> Sign In </a>
+
+		</div>
 	</nav>
-    <main>
-		<section>
-			<h2>Matching Pairs</h2>
-			<img src="./images/matchingPairs.png" alt="Matching Pairs" width="100" height="100" > 
-            <br>
-            <a href="../games/matchingPairs/matchingpairs.html"><button>Play Now!</button></a>
-		</section>
-		<section>
-			<h2> Tic Tac Toe</h2>
-			<img src="./images/ticTacToe.png" alt="Tic Tac Toe" width="100" height="100" > 
-            <br>
-            <a href="../games/xo/index.html"><button>Play Now!</button></a>
-		</section>
-		<section>
+	
+	<div class="grid">
+		<div class=gameContainer>
+			<a class="game" href="../games/matchingPairs/matchingpairs.html"><img src="./images/matchingPairs.png" alt="Matching Pairs" width="100" height="100"></a>
+		<h2>Matching Pairs</h2>
+	</div>
+		<div class=gameContainer>
+			<a class="game" href="../games/xo/index.html"><img src="./images/ticTacToe.png" alt="Tic Tac Toe" width="100" height="100"></a>
+			<h2>Tic Tac Toe</h2>
+		</div>
+		<div class=gameContainer>
+			<a class="game" href="../games/puzzle/pzl.html"><img src="./images/slidingGame.png" alt="Puzzle" width="100" height="100"></a>
 			<h2>Sliding Puzzle</h2>
-            <img src="./images/slidingGame.png" alt="Puzzle" width="100" height="100">
-            <br>
-			<a href="../games/puzzle/pzl.html"><button>Play Now!</button></a>
-			
-		</section>
-        <section>
-			<h2> Snake Game</h2>
-			<img src="./images/snake.png" alt="Snake" width="100" height="100" > 
-            <br>
-            <a href="../games/snake/snake.html"><button>Play Now!</button></a>
-		</section>
-
-		<section>
-			<h2> Trivia Game</h2>
-			<img src="./images/trivia.png" alt="Trivia" width="100" height="100" > 
-            <br>
-            <a href="../games/trivia/trivia.html"><button>Play Now!</button></a>
-		</section>
-
-		<section>
-			<h2> Search Game</h2>
-			<img src="./images/searchWord.png" alt="Search Game" width="100" height="100" > 
-            <br>
-            <a href="../games/search game/search.html"><button>Play Now!</button></a>
-		</section>
-        
-	</main>
-	<footer>
+		</div>
+		<div class=gameContainer>
+			<a class="game" href="../games/snake/snake.html"><img src="./images/snake.png" alt="Snake" width="100" height="100"></a>
+			<h2>Snake Game</h2>
+		</div>
+		<div class=gameContainer>
+			<a class="game" href="../games/trivia/trivia.html"><img src="./images/trivia.png" alt="Trivia" width="100" height="100"></a>
+			<h2>Trivia Game</h2>
+		</div>
+		<div class=gameContainer>
+			<a class="game" href="../games/search game/search.html"><img src="./images/searchWord.png" alt="Search Game" width="100" height="100"></a>
+			<h2>Search Game</h2>
+		</div>
+		<div class=gameContainer>
+			<a class="game" href=""><img src="" alt="Hang Man" width="100" height="100"></a>
+			<h2>Hang Man</h2>
+		</div>
+		<div class=gameContainer>
+			<a class="game" href=""><img src="" alt="Rock Paper Scissors" width="100" height="100"></a>
+			<h2>Rock Paper Scissors</h2>
+		</div>
+	</div>
+	
+	<!-- <footer>
 		<a href="../formulaire/formulaire.html">
 			<button style="font-size: 20px; padding: 10px 20px; border-radius: 5px; background-color: #4CAF50; color: white;">Create an account</button>
 		</a>
         
 		<p>&copy; 2023 Gaming Site. All rights reserved.</p>
 		<a href=""><button style="font-size: 16px; padding: 5px 10px; border-radius: 3px; background-color: #337ab7; color: white;">Send feedback</button></a>
-	</footer>
+	</footer> -->
 </body>
 </html>
