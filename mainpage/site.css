@@ -17,7 +17,6 @@ body{
 }
 .notactive {
   width: 30px;
-
   padding: 5px;
 }
 .active{
@@ -100,13 +99,11 @@ body{
 .navbarlogin-sign-up {
   background-color: #5D7DEF;
   border-radius: 20px;
-  height: 20px;
   width: 80px;
   text-align: center;
 }
 .navbarlogin-sign-up1 {
   border-radius: 20px;
-  height: 20px;
 }
 
 /* .navbarlogin-profile {
@@ -150,33 +147,184 @@ body{
   padding: 10px;
   border-radius: 20px;
 	}
-/* Footer */
-/* footer {
-  background-color: #333;
-  color: #fff;
-  display: flex;
-  justify-content: space-between;
+  footer {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-color: #11227A !important;
+    height:370px;
+    width:100%;
+    padding-top:0px;
+  
+  
+  }
+  .text-white {
+    --tw-text-opacity: 1;
+    color: rgba(255,255,255,var(--tw-text-opacity));
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  .bg-black {
+    --tw-bg-opacity: 1;
+    background-color: rgba(0,0,0,var(--tw-bg-opacity));
+  }
+  *, ::after, ::before {
+    --tw-ring-inset: var(--tw-empty, );
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: rgba(59, 130, 246, 0.5);
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+  }
+  *, ::after, ::before {
+    --tw-shadow: 0 0 #0000;
+  }
+  *, ::after, ::before {
+    --tw-border-opacity: 1;
+    border-color: rgba(229,231,235,var(--tw-border-opacity));
+  }
+  *, ::after, ::before {
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: currentColor;
+  }
+  *, ::after, ::before {
+    box-sizing: border-box;
+  }
+  user agent stylesheet
+  footer {
+    display: block;
+  }
+  *, ::after, ::before {
+    --tw-shadow: 0 0 #0000;
+  }
+  *, ::after, ::before {
+    --tw-border-opacity: 1;
+    border-color: rgba(229,231,235,var(--tw-border-opacity));
+  }
+  *, ::after, ::before {
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: currentColor;
+  }
+  *, ::after, ::before {
+    box-sizing: border-box;
+  }
+  *, ::after, ::before {
+    --tw-ring-inset: var(--tw-empty, );
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: rgba(59, 130, 246, 0.5);
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+  }
+  *, ::after, ::before {
+    --tw-shadow: 0 0 #0000;
+  }
+  *, ::after, ::before {
+    --tw-border-opacity: 1;
+    border-color: rgba(229,231,235,var(--tw-border-opacity));
+  }
+  *, ::after, ::before {
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: currentColor;
+  }
+  *, ::after, ::before {
+    box-sizing: border-box;
+  }
+  .menu.flex.align-center.justify-center.text-sm {
+  display: flex ;
   align-items: center;
-  height: 50px;
-  padding: 0 20px;
-}
-
-footer p {
-  margin: 0;
-  font-size: 14px;
-}
-
-footer button {
-  background-color: #337ab7;
-  border: none;
-  color: #fff;
-  cursor: pointer;
-  font-size: 16px;
-  padding: 5px 10px;
-  border-radius: 3px;
-  transition: background-color 0.3s ease;
-}
-
-footer button:hover {
-  background-color: #2e6da4;
-} */
+  justify-content: center;
+  
+  }
+  #logo11 {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+  
+  
+  }
+  .logoandname {
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    text-deoration: none !important;
+    margin-right: 10px; 
+    padding-right: 65px;  
+    font-size: x-large;
+    padding-top: 10px;
+  }
+  #menu-footer {
+    text-decoration: none !important;  
+  
+  }
+  .mx-auto.flex.justify-center.align-center {
+    text-decoration: none !important;  
+  
+  }
+  #menu-extra {
+    text-decoration: none !important;  
+  
+  }
+  ul{
+    list-style-type: none;
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    word-spacing: 1px;
+  
+  }
+  .m-4 > img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    
+  }
+  #twit{
+    padding-left:40px;
+  }
+  #GC{
+    font-size:larger;
+    margin-left: 5px;
+  }
+  .playgames{
+    font-size: larger;
+  }
+  .mx-auto1{
+    margin-right:35px;
+  
+  }
+  .mx-auto1 >li {
+    margin-right:25px;
+    padding-bottom: 1x;
+  
+  
+  }
+  .username{
+    font-size: small;
+    padding-left:10px;
+    padding-bottom:30px;
+  
+    
+  }
+  .connect{
+    font-size: larger;
+    align-content: center;
+    padding-top: 0px;
+    margin-top: -20px;
+  
+  }
+  .footer-copyright{
+    font-size: x-small;
+  }
+  .newdiv{
+   margin-top:0px !important;
+   margin-bottom: 0px !important;
+  }
