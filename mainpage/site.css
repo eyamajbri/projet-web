@@ -6,7 +6,7 @@ body{
   font-family: 'Nunito';
   font-weight: 800;
 }
-.navbar {
+.navbarlogin {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -15,18 +15,37 @@ body{
   height: 60px;
   padding: 0 20px;
 }
+.notactive {
+  width: 30px;
 
-.navbar-logo img {
+  padding: 5px;
+}
+.active{
+  width: 25px;
+  margin-right: 15px;
+  display: none ;
+}
+
+.navbarlogout {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #11227A;
+  color: #fff;
+  height: 60px;
+  padding: 0 20px;
+}
+.navbarlogin-logo img {
   height: 40px;
   margin-left: 20px;
 }
 
-.navbar-search form {
+.navbarlogin-search form {
   display: flex;
   align-items: center;
 }
 
-.navbar-search input[type="text"] {
+.navbarlogin-search input[type="text"] {
   padding: 10px;
   border: solid 1px #11227A;
   border-radius: 20px;
@@ -37,35 +56,61 @@ body{
 }
 
 
-.navbar-buttons{
+.navbarlogin-buttons{
   font-family: 'Nunito';
   font-weight: 800;
   display: flex;
-  gap: 20px;
+  gap: 5px;
   align-items: center;
 }
-
-.navbar-buttons a {
+.navbarlogout-buttons{
+  font-family: 'Nunito';
+  font-weight: 800;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  margin-right: 30px;
+}
+.navbarlogout-buttons a{
   color: #fff;
   font-size: 16px;
   text-decoration: none;
   padding: 10px;
 }
 
-
-
-.navbar-sign-up {
+.navbarlogin-buttons a {
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 10px;
+}
+.icon{
+  padding: 0% !important;
+  display: flex;
+  align-items: center;
+}
+.logout {
   background-color: #5D7DEF;
   border-radius: 20px;
   height: 20px;
+  width: 80px;
+  text-align: center;
 }
-.navbar-sign-up1 {
+
+.navbarlogin-sign-up {
+  background-color: #5D7DEF;
+  border-radius: 20px;
+  height: 20px;
+  width: 80px;
+  text-align: center;
+}
+.navbarlogin-sign-up1 {
   border-radius: 20px;
   height: 20px;
 }
 
-.navbar-profile {
-}
+/* .navbarlogin-profile {
+} */
 .icon{
   width: 25px;
 }
