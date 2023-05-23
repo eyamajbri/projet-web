@@ -1,7 +1,7 @@
 /* Navigation bar */
 body{
 	margin: 0%;
-  background-image: url('./images/background.png');
+  background-image :linear-gradient(to right,#96B3C2,#96B3C2);
   background-size: cover;
   font-family: 'Nunito';
   font-weight: 800;
@@ -10,7 +10,7 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #11227A;
+  background-color: #31668f;
   color: #fff;
   height: 60px;
   padding: 0 20px;
@@ -29,7 +29,7 @@ body{
   display: none;
   justify-content: space-between;
   align-items: center;
-  background-color: #11227A;
+  background-color:#31668f;
   color: #fff;
   height: 60px;
   padding: 0 20px;
@@ -46,7 +46,7 @@ body{
 
 .navbarlogin-search input[type="text"] {
   padding: 10px;
-  border: solid 1px #11227A;
+  border: solid 1px #31668f;
   border-radius: 20px;
   font-size: 16px;
   margin-right: 10px;
@@ -135,7 +135,7 @@ body{
 	
 	/* Heading styling */
 	h2 {
-  color: white;
+  color: rgb(4, 4, 4);
 	font-size: 18px;
 	margin-top: 5px;
 	}
@@ -151,7 +151,7 @@ body{
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    background-color: #11227A !important;
+    background-color: #31668f !important;
     height:370px;
     width:100%;
     padding-top:0px;
