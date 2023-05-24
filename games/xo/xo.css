@@ -93,3 +93,32 @@ h1 {
   color: #333333;
   margin-bottom: 0;
 }
+
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.video-container {
+  margin-top: 20px;
+}
+
+.video-container video {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+}
+/*.description {
+  font-size: 20px;
+  line-height: 1.5;
+  color: rgb(16, 15, 14);
+  
+}*/
+.titre {
+  color: rgb(66, 36, 36);
+}
