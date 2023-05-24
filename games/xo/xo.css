@@ -71,7 +71,7 @@ h1 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: white;
+  background-color: rgb(240, 245, 245);
   border: 1px solid #ccc;
   padding: 20px;
   border-radius: 5px;
@@ -100,7 +100,7 @@ h1 {
   margin: 0 auto;
   padding: 20px;
   text-align: center;
-  color: #ffffff;
+  color: #000000;
 }
 
 .video-container {
