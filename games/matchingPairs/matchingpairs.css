@@ -103,3 +103,40 @@ h3{
 	background-color: #98babf;
 	cursor: pointer;
 }
+body {
+  background-image: url('m.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.video-container {
+  margin-top: 20px;
+}
+
+.video-container video {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+}
+.description {
+  font-size: 20px;
+  line-height: 1.5;
+  color: rgb(225, 213, 221);
+  
+}
+.titre {
+  color: rgb(0, 0, 0);
+}
+
+
