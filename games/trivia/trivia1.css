@@ -9,7 +9,7 @@ body {
   width: 600px;
   margin: 0 auto;
   text-align: center;
-  background-color: #e2aac46c;
+  background-color: #e4b2c9;
   padding: 50px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -75,13 +75,13 @@ li {
   margin-bottom: 10px;
   border-radius: 5px;
   cursor: pointer;
-  background-color: #f5f5f5;
+  background-color: #dad6d6;
   color: #525252;
   font-family: 'Roboto', sans-serif;
 }
 
 li:hover {
-  background-color: #e0e0e0;
+  background-color: #f8f8f8;
 }
 
 li:active {
@@ -95,7 +95,7 @@ li.correct {
 }
 
 li.incorrect {
-  background-color: #ff9999;
+  background-color: #ded2d2;
   color: #525252;
   font-family: 'Roboto', sans-serif;
 }
@@ -121,14 +121,14 @@ li.incorrect {
 .description {
   font-size: 20px;
   line-height: 1.5;
-  color: rgb(225, 213, 221);
+  color: rgb(234, 230, 233);
   
 }
 .titre {
-  color: #174f57;
+  color: #420e2a;
 }
 .my-button {
-  background-color: #13175c;
+  background-color: #290224;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -141,7 +141,7 @@ li.incorrect {
 }
 
 .my-button:hover {
-  background-color: #3d56b1; /* Nouvelle couleur de fond au survol */
+  background-color: #ad1d60; /* Nouvelle couleur de fond au survol */
 }
 
 
