@@ -1,8 +1,15 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url('background.jpg') ;
+  background-size: cover;
+  margin: 0;
+}
+
 .container {
   width: 600px;
   margin: 0 auto;
   text-align: center;
-  background-color: #f0ebeb;
+  background-color: #e2aac46c;
   padding: 50px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -11,7 +18,7 @@
 h1 {
   font-size: 3rem;
   margin-bottom: 30px;
-  color: #525252;
+  color: #690931;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -22,13 +29,13 @@ form {
 label {
   margin-right: 10px;
   font-size: 1.5rem;
-  color: #525252;
+  color: #270221;
   font-family: 'Montserrat', sans-serif;
 }
 
 button {
   font-size: 1.5rem;
-  background-color: #ff8080;
+  background-color: #db871a;
   color: #fff;
   border: none;
   padding: 10px 20px;
