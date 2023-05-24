@@ -122,7 +122,7 @@ body {
 }
 
 .video-container {
-  margin-top: 0px;
+  margin-top: 20px;
 }
 
 .video-container video {
@@ -134,13 +134,12 @@ body {
 .description {
   font-size: 20px;
   line-height: 1.5;
-  color: rgb(255, 252, 254);
-  background-color: rgb(0, 0, 0);
+  color: rgb(225, 213, 221);
   
 }
 .titre {
-  background-color: rgb(0, 0, 0);
-  color: rgb(255, 9, 9);
-  padding: 10px;
+  color: rgb(0, 0, 0);
 }
 
+
+  
