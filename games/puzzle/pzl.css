@@ -45,7 +45,7 @@ body {
   .btn , #nb{
     font-size: 24px;
     font-weight: bold;
-    background-color: #b92959;
+    background-color: #89183e;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -55,7 +55,7 @@ body {
     cursor: pointer;
   }
   .btn:hover,.btn1:hover {
-    background-color: #3498db;
+    background-color: #bb8659;
   }
   #btns{
 display:flex;
@@ -120,5 +120,21 @@ box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.2);
   .titre {
     color: rgb(66, 36, 36);
   }
+  .my-button {
+    background-color: #89183e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background-color 0.5 ease; 
+  }
   
+  .my-button:hover {
+    background-color: #bb8659; /* Nouvelle couleur de fond au survol */
+  }
+   
   
