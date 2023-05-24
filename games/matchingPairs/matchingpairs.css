@@ -136,7 +136,27 @@ body {
   
 }
 .titre {
-  color: rgb(0, 0, 0);
+  color: #174f57;
 }
+.my-button {
+  background-color: #13175c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+  transition: background-color 0.5 ease; /* Transition douce de la couleur de fond */
+}
+
+.my-button:hover {
+  background-color: #3d56b1; /* Nouvelle couleur de fond au survol */
+}
+
+
+  
+
 
 
