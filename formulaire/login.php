@@ -1,89 +1,118 @@
 <?php
-# Initialize session
-session_start();
 
-# Check if user is already logged in, If yes then redirect him to index page
-if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] == TRUE) {
-  echo "<script>" . "window.location.href='./'" . "</script>";
-  exit;
-}
+$is_invalid = false;
 
-# Include connection
-require_once "./connexion.php";
-
-# Define variables and initialize with empty values
-$user_login_err = $user_password_err = $login_err = "";
-$user_login = $user_password = "";
-
-# Processing form data when form is submitted
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  if (empty(trim($_POST["user_login"]))) {
-    $user_login_err = "Please enter your username or an email id.";
-  } else {
-    $user_login = trim($_POST["user_login"]);
-  }
-
-  if (empty(trim($_POST["user_password"]))) {
-    $user_password_err = "Please enter your password.";
-  } else {
-    $user_password = trim($_POST["user_password"]);
-  }
-
-  # Validate credentials 
-  if (empty($user_login_err) && empty($user_password_err)) {
-    # Prepare a select statement
-    $sql = "SELECT id, username, password FROM users WHERE username = ? OR email = ?";
-
-    if ($stmt = mysqli_prepare($link, $sql)) {
-      # Bind variables to the statement as parameters
-      mysqli_stmt_bind_param($stmt, "ss", $param_user_login, $param_user_login);
-
-      # Set parameters
-      $param_user_login = $user_login;
-
-      # Execute the statement
-      if (mysqli_stmt_execute($stmt)) {
-        # Store result
-        mysqli_stmt_store_result($stmt);
-
-        # Check if user exists, If yes then verify password
-        if (mysqli_stmt_num_rows($stmt) == 1) {
-          # Bind values in result to variables
-          mysqli_stmt_bind_result($stmt, $id, $username, $hashed_password);
-
-          if (mysqli_stmt_fetch($stmt)) {
-            # Check if password is correct
-            if (password_verify($user_password, $hashed_password)) {
-
-              # Store data in session variables
-              $_SESSION["id"] = $id;
-              $_SESSION["username"] = $username;
-              $_SESSION["loggedin"] = TRUE;
-
-              # Redirect user to index page
-              echo "<script>" . "window.location.href='./'" . "</script>";
-              exit;
-            } else {
-              # If password is incorrect show an error message
-              $login_err = "The email or password you entered is incorrect.";
-            }
-          }
-        } else {
-          # If user doesn't exists show an error message
-          $login_err = "Invalid username or password.";
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
+    
+    $mysqli = require __DIR__ . "/database.php";
+    
+    $sql = sprintf("SELECT * FROM user
+                    WHERE email = '%s'",
+                   $mysqli->real_escape_string($_POST["email"]));
+    
+    $result = $mysqli->query($sql);
+    
+    $user = $result->fetch_assoc();
+    
+    if ($user) {
+        
+        if (password_verify($_POST["password"], $user["password_hash"])) {
+            
+            session_start();
+            
+            session_regenerate_id();
+            
+            $_SESSION["user_id"] = $user["id"];
+            
+            header("Location: index.php");
+            exit;
         }
-      } else {
-        echo "<script>" . "alert('Oops! Something went wrong. Please try again later.');" . "</script>";
-        echo "<script>" . "window.location.href='./login.php'" . "</script>";
-        exit;
-      }
-
-      # Close statement
-      mysqli_stmt_close($stmt);
     }
-  }
-
-  # Close connection
-  mysqli_close($link);
+    
+    $is_invalid = true;
 }
-?>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="form.css">
+	<title>Document</title>
+</head>
+
+<body>
+	
+<div class="cont">
+  <div class="form sign-in">
+    <h2>Welcome back</h2>
+    
+    <?php if ($is_invalid): ?>
+      <em>Invalid login</em>
+  <?php endif; ?>
+
+    <form action="./login.php" method="post" novalidate>
+      <label>
+      <span>Email</span>
+      <input type="email" name="user_login" 
+      value="<?= htmlspecialchars($_POST["email"] ?? "") ?>">
+
+      
+    </label>
+    <label>
+      <span>Password</span>
+      <input type="password" name="user_password"  />
+    </label>
+    <button type="submit" class="submit">Sign In</button>
+  </form>
+  </div>
+  <div class="sub-cont">
+    <div class="img">
+      <div class="img__text m--up">
+        <h2>New here?</h2>
+        <p>Sign up and have some fun!</p>
+      </div>
+      <div class="img__text m--in">
+        <h2>One of us?</h2>
+        <p>If you already have an account, just sign in.</p>
+      </div>
+      <div class="img__btn">
+        <span class="m--up">Sign Up</span>
+        <span class="m--in">Sign In</span>
+      </div>
+    </div>
+    <div class="form sign-up">
+      <h2>Join us now!</h2>
+      <form action="./signup.php" method="post" novalidate>      <label>
+        <span>Userame</span>
+        <input type="text" name="username" >
+      </label>
+      <label>
+        <span>Email</span>
+        <input type="email" name="email" >
+      </label>
+      <label>
+        <span>Password</span>
+        <input type="password" name="password"  />
+      </label>
+      <button type="submit" class="submit" value="Sign Up">Sign Up</button>
+    </form>
+    </div>
+  </div>
+</div>
+
+
+</body>
+<script src="./form.js"> </script>
+</html>
+
+
+
+
+
+
+
+

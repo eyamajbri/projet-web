@@ -5,7 +5,9 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="form.css">
-	<title>Document</title>
+  <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js" defer></script>
+  <script src="./validation.js" defer></script>
+	<title>LogIn</title>
 </head>
 
 <body>
@@ -15,15 +17,16 @@
     <h2>Welcome back</h2>
     <form action="./login.php" method="post" novalidate>
       <label>
-      <span>Email or username</span>
+      <span>Email</span>
       <input type="email" name="user_login"  />
+      
     </label>
     <label>
       <span>Password</span>
       <input type="password" name="user_password"  />
     </label>
     <button type="submit" class="submit">Sign In</button>
-  </form>
+  </form >
   </div>
   <div class="sub-cont">
     <div class="img">
@@ -42,9 +45,9 @@
     </div>
     <div class="form sign-up">
       <h2>Join us now!</h2>
-      <form action="./signup.php" method="post" novalidate>      <label>
+      <form action="./signup.php" method="post" id="signup" novalidate>      <label>
         <span>Userame</span>
-        <input type="text" name="username" >
+        <input type="text" name="name" >
       </label>
       <label>
         <span>Email</span>
