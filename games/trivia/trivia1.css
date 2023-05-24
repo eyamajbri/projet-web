@@ -99,3 +99,53 @@ li.incorrect {
   color: #525252;
   font-family: 'Roboto', sans-serif;
 }
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.video-container {
+  margin-top: 20px;
+}
+
+.video-container video {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+}
+.description {
+  font-size: 20px;
+  line-height: 1.5;
+  color: rgb(225, 213, 221);
+  
+}
+.titre {
+  color: #174f57;
+}
+.my-button {
+  background-color: #13175c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+  transition: background-color 0.5 ease; /* Transition douce de la couleur de fond */
+}
+
+.my-button:hover {
+  background-color: #3d56b1; /* Nouvelle couleur de fond au survol */
+}
+
+
+  
+
+
+
