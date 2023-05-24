@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background-image: url('background.jpg');
+  background-image: url('x3.jpg');
   background-size: cover;
 }
 
@@ -16,15 +16,15 @@ h1 {
   margin: 0 auto;
   width: 320px;
   height: 320px;
-  background-color: rgba(245, 129, 154, 0.459);
-  border: 1px solid #dd1181be;
+  background-color: #fff;
+  border: 1px solid #020d1bbe;
   border-radius: 5px;
 }
 
 .square {
   width: 100px;
   height: 100px;
-  border: 1px solid #ce0d67bd;
+  border: 1px solid #1f0363bd;
   font-size: 50px;
   text-align: center;
   line-height: 100px;
@@ -34,7 +34,7 @@ h1 {
 }
 
 .square:hover {
-  background-color: #f2f2f2;
+  background-color: #f4f1f1;
 }
 
 .row:after {
@@ -53,7 +53,7 @@ h1 {
   margin-top: 20px;
   font-size: 18px;
   color: white;
-  background-color: #e43469;
+  background-color: #5356c0;
   border: none;
   border-radius: 5px;
   padding: 10px 20px;
@@ -62,7 +62,7 @@ h1 {
 }
 
 #reset-btn:hover {
-  background-color: #ca9d9d;
+  background-color: #432c9d;
 }
 
 .winning-message {
@@ -120,5 +120,26 @@ h1 {
   
 }*/
 .titre {
-  color: rgb(66, 36, 36);
+  background-color: rgb(23, 23, 58);
+  color: #fff;
+  padding: 10px;
+}
+.my-button {
+  background-color: #5356c0;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+  transition: background-color 0.5 ease; 
+}
+
+.my-button:hover {
+  background-color: #432c9d; /* Nouvelle couleur de fond au survol */
+}
+.turn{
+  color: #fff;
 }
