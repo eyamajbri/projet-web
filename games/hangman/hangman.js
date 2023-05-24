@@ -20,10 +20,19 @@ let letters;
 let lives;
 
 const words = new Map([
-  ['ensi','A software engeneering school'],
-  ['javascript', 'A scripting or programming language'],
+  ['ENSI','A software engeneering school'],
+  ['javaScript', 'A scripting or programming language'],
   ['hangman', 'The name of this game'],
-  ['zanezone', 'The name of this site']
+  ['bicycle', 'A two-wheeled vehicle'],
+  ['guitar', 'A musical instrument with strings'],
+  ['ocean', 'A large body of saltwater'],
+  ['mountain', 'A tall natural elevation'],
+  ['book', 'A written or printed work'], 
+  ['cat', 'A small domesticated feline'],
+['pizza', 'A savory dish consisting of a round, flattened base of dough topped with ingredients'],
+['sunflower', 'A tall plant with a large, bright yellow flower head'],
+['coffee', 'A hot drink made from roasted coffee beans'],
+['globe', 'A spherical model of the Earth']
 ]);
 
 // making a list of only keys from words
