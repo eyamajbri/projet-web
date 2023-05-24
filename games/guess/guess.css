@@ -13,6 +13,7 @@ body{
   align-items: center;
   justify-content: center;
   background: #2a314f;
+  flex-direction: column ;
 }
 .wrapper{
   width: 430px;
@@ -138,8 +139,21 @@ body {
   
 }
 .titre {
-  color: rgb(0, 0, 0);
+  color: rgb(211, 197, 197);
+}
+.my-button {
+  background-color: #191d6c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+  transition: background-color 0.5 ease; /* Transition douce de la couleur de fond */
 }
 
-
-  
+.my-button:hover {
+  background-color: #972250; /* Nouvelle couleur de fond au survol */
+}
