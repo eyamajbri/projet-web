@@ -59,7 +59,7 @@ canvas{
 	padding: 5px 10px;
 }
 .btn1:hover, #faster:hover, #slower:hover {
-	background-color: yellow;
+	background-color: rgb(3, 3, 3);
 	cursor: pointer;
 }
 
@@ -111,7 +111,22 @@ canvas{
 			
 		  }
 		  .titre {
-			color: rgb(11, 11, 11);
+			color: green;
 		  }
 		  
-				  
+.my-button {
+			background-color: green;
+			color: white;
+			border: none;
+			padding: 10px 20px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			border-radius: 4px;
+			transition: background-color 0.5 ease 
+		}
+.my-button:hover {
+			background-color: #0d0d0d; /* Nouvelle couleur de fond au survol */
+		  }
+					 
