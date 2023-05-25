@@ -1,4 +1,24 @@
-En tant que groupe composé d'Ameni Laifi, Zaineb Souissi, Eya Majbri et Nesrine Souissi, nous avons créé un site de jeux comprenant huit jeux différents, chacun accompagné d'une vidéo d'explication et d'une conception JavaScript, HTML et CSS. Voici une description brève de chaque jeu et comment réaliser leur implémentation :
+NB: Pour que le code fonctionne correctement, veuillez :
+  1- Installer Xampp by Apache friends 
+  2- Mettre le repértoire 'projet-web' dans un sous-repértoire de '/xampp/htdocs'
+  3-Assurez-vous que les actions Aapche et Mysql sont activées
+
+Notre groupe comprend:
+            Ameni Laifi
+            Zaineb Souissi
+            Eya Majbri 
+            Nesrine Souissi
+            
+Nous avons créé un site de gaming composé des jeux suivant:
+  1-Tic Tac Toe
+  2-Matching Pairs
+  3-Snake
+  4-Trivia game
+  5-Rock Paper Scissors
+  6-Guess the word
+  7-Sliding Puzzle
+  8-Hangman
+  
 
 /* Partie Front-end: */
 
@@ -65,5 +85,12 @@ Lien interne : Chaque jeu de la page du site contient un lien interne qui mène 
 Le bouton "Contactez-nous" peut être placé dans la barre de navigation et rediriger les utilisateurs vers une section du site, probablement le pied de page (footer), où vous pouvez fournir des informations sur la façon de contacter votre équipe.
 
 /* Partie Back-end: */
+Les taches suivantes ont été éffectuées :
 
+-Créez une page d'inscription en HTML avec un formulaire.
+-Validez les données côté serveur en PHP.
+-Enregistrez les données d'inscription dans une base de données MySQL en utilisant PHP.
+-Créez des pages de connexion et de déconnexion.
+-Validez les données côté navigateur en utilisant JavaScript.
+-Validez l'e-mail en utilisant une requête AJAX.
 
