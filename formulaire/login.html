@@ -6,7 +6,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="form.css">
   <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js" defer></script>
-  <script src="./validation.js" defer></script>
 	<title>LogIn</title>
 </head>
 
@@ -18,12 +17,12 @@
     <form action="./login.php" method="post" novalidate>
       <label>
       <span>Email</span>
-      <input type="email" name="user_login"  />
+      <input type="email" name="email" />
       
     </label>
     <label>
       <span>Password</span>
-      <input type="password" name="user_password"  />
+      <input type="password" name="password"  />
     </label>
     <button type="submit" class="submit">Sign In</button>
   </form >
@@ -65,5 +64,6 @@
 
 
 </body>
+<script src="./validation.js" defer></script>
 <script src="./form.js"> </script>
 </html>

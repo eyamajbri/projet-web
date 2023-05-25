@@ -7,7 +7,7 @@ const winningMessageElement = document.querySelector('.winning-message')
 const restartButton = document.getElementById('reset-btn')
 const winningMessageTextElement = document.querySelector('[data-winning-message-text]')
 let circleTurn
-let turn=document.getElementById("turn")
+let turn=document.querySelector(".turn")
 const WINNING_COMBINATIONS = [
   [0, 1, 2],
   [3, 4, 5],

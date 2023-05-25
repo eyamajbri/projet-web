@@ -142,4 +142,6 @@ h1 {
 }
 .turn{
   color: #fff;
+  background-color: rgb(23, 23, 58) ;
+  width: fit-content;
 }

@@ -32,6 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $is_invalid = true;
 }
 
+?>
 
 
 <!DOCTYPE html>
@@ -57,14 +58,14 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <form action="./login.php" method="post" novalidate>
       <label>
       <span>Email</span>
-      <input type="email" name="user_login" 
+      <input type="email" name="email" 
       value="<?= htmlspecialchars($_POST["email"] ?? "") ?>">
 
       
     </label>
     <label>
       <span>Password</span>
-      <input type="password" name="user_password"  />
+      <input type="password" name="password"  />
     </label>
     <button type="submit" class="submit">Sign In</button>
   </form>
@@ -88,7 +89,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
       <h2>Join us now!</h2>
       <form action="./signup.php" method="post" novalidate>      <label>
         <span>Userame</span>
-        <input type="text" name="username" >
+        <input type="text" name="name" >
       </label>
       <label>
         <span>Email</span>

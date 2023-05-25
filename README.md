@@ -1,5 +1,7 @@
 En tant que groupe composé d'Ameni Laifi, Zaineb Souissi, Eya Majbri et Nesrine Souissi, nous avons créé un site de jeux comprenant huit jeux différents, chacun accompagné d'une vidéo d'explication et d'une conception JavaScript, HTML et CSS. Voici une description brève de chaque jeu et comment réaliser leur implémentation :
 
+/* Partie Front-end: */
+
 Tic Tac Toe (Morpion) :
 
 Description : Un jeu de stratégie où deux joueurs s'affrontent pour aligner trois symboles (généralement "X" ou "O") sur une grille de 3x3 cases.
@@ -61,3 +63,7 @@ JavaScript : Gérez les événements de saisie des joueurs, comparez les lettres
 En ce qui concerne la fonctionnalité de recherche sur le site, vous pouvez créer un champ de recherche dans la barre de navigation où les utilisateurs peuvent saisir le nom ou les premières lettres d'un jeu. Vous pouvez ensuite utiliser JavaScript pour filtrer les jeux correspondants et afficher les résultats.
 Lien interne : Chaque jeu de la page du site contient un lien interne qui mène à une autre page identique, mais qui présente une vidéo explicative du jeu. Ce lien permet aux joueurs de mieux comprendre les règles et les stratégies du jeu avant de commencer à jouer.
 Le bouton "Contactez-nous" peut être placé dans la barre de navigation et rediriger les utilisateurs vers une section du site, probablement le pied de page (footer), où vous pouvez fournir des informations sur la façon de contacter votre équipe.
+
+/* Partie Back-end: */
+
+

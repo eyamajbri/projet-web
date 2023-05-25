@@ -14,10 +14,11 @@ body{
   align-items: center;
   justify-content: center;
   background: #2a314f;
-  flex-direction: column ;
+  gap:40px;
+
 }
 .wrapper{
-  width: 430px;
+  width: fit-content;
   background: #fff;
   border-radius: 10px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
@@ -32,7 +33,7 @@ body{
 }
 .content .inputs{
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: center;
 }
 .inputs input{
@@ -152,7 +153,7 @@ body {
   display: inline-block;
   font-size: 16px;
   border-radius: 4px;
-  transition: background-color 0.5 ease; /* Transition douce de la couleur de fond */
+  transition:  0.5 ease; /* Transition douce de la couleur de fond */
 }
 
 .my-button:hover {

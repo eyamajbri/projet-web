@@ -24,21 +24,18 @@ if (isset($_SESSION["user_id"])) {
 </head>
 <body>
     
-    <h1>Home</h1>
+    <!--<h1>sali</h1> -->
     
-    <?php if (isset($user)): ?>
-       <? 
-        header("Location: signup-success.html");
-        exit;
-        ?>
-    <?php else: ?>
-        
-        <? 
-                header("Location: login.html");
-                exit;
-        ?>
+    <?php
+if (isset($user)) {
+    header("Location: signup-success.html");
+    exit;
+} else {
+    header("Location: login.html");
+    exit;
+}
+?>
 
-    <?php endif; ?>
     
 </body>
 </html>

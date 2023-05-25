@@ -1,7 +1,7 @@
 /* Navigation bar */
 body{
-	margin: 0%;
   background-image :linear-gradient(to right,#96B3C2,#96B3C2);
+	margin: 0%;
   background-size: cover;
   font-family: 'Nunito';
   font-weight: 800;
@@ -26,7 +26,7 @@ body{
 }
 
 .navbarlogout {
-  /*display: none;*/
+  display: flex;
   justify-content: space-between;
   align-items: center;
   background-color:#31668f;
@@ -305,7 +305,7 @@ body{
   
   
   }
-  .username{
+  .name{
     font-size: small;
     padding-left:10px;
     padding-bottom:30px;
